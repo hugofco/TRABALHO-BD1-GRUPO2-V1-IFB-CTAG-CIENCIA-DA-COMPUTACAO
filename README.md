@@ -46,5 +46,5 @@ docker run -d --name Banco_Universidade_grupo2 -e MYSQL_ROOT_PASSWORD=admin -p 3
 ```
 ### Criação do Banco de Dados (MYSQL WorkBench ou um SGBD de sua preferência compatível com SQL)
 
-Na pasta 'SQL-Scripts' no repositório, você encontrará o arquivo 'build_database_script_trabalho_bd1_grupo2_v2.sql'
-Neste arquivo está todo o script de construção do banco, com as respectivas tabelas, atributos, população de tabelas (com valores simbólicos) e estabelecimento de relações de acordo com o que foi proposto na modelagem anteriormente. Na mesma pasta, também se encontram todos os scripts para a consulta descrita nos items 5 e 6 da descrição do trabalho.
+Na pasta 'SQL-Scripts' no repositório, você encontrará o arquivo 'exercicio_bd1_universidade_grupo2.sql'
+Neste arquivo está todo o script de construção do banco, com as respectivas tabelas, atributos, população de tabelas (com valores simbólicos) e estabelecimento de relações de acordo com o que foi proposto na modelagem anteriormente.
