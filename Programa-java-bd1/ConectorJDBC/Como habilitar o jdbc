@@ -1,0 +1,15 @@
+== Como habilitar o driver JDBC do mySQL No VScode ==
+
+1 - Abra a pasta completa do projeto no aplicativo do VScode
+
+2 - Na aba "EXPLORER" procure por "JAVA PROJECTS" no canto inferior esquerdo
+
+3 - Expande a aba "JAVA PROJECTS" e o projeto "Exercicio-BD1-IFB-CTAG-01..." contido no mesmo
+
+4 - Posicione o cursor do mouse acima de "Referenced Libraries" e clique no símbolo "+" 
+
+5 - O gerenciador de arquivos será aberto para a seleção de biliotecas .jar
+
+6 - Acesse a pasta ConectorJDBC (a mesma que contém esse arquivo) e selecione o arquivo "mysql-connector-j-8.4.0.jar
+
+-> Agora o código será capaz de se comunicar com o banco de dados.

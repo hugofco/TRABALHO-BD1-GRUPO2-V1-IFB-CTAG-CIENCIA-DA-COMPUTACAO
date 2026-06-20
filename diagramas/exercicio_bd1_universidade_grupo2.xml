@@ -1,0 +1,63 @@
+<mxfile host="Electron" agent="Manual">
+  <diagram id="univ-diagram" name="Modelo ER Universidade">
+    <mxGraphModel dx="1590" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="curso" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;" value="Cursos" vertex="1">
+          <mxGeometry height="80" width="200" x="80" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="curso_id" parent="curso" style="shape=partialRectangle;connectable=0;fill=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" value="PK: id_curso (int)&#xa;nome (varchar)" vertex="1">
+          <mxGeometry height="50" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aluno" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;" value="Aluno" vertex="1">
+          <mxGeometry height="110" width="200" x="80" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="aluno_fields" parent="aluno" style="shape=partialRectangle;connectable=0;fill=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" value="PK: matricula (int)&#xa;nome (varchar)&#xa;cpf (int)&#xa;FK: id_curso (int)" vertex="1">
+          <mxGeometry height="80" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="disciplina" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;" value="Disciplinas" vertex="1">
+          <mxGeometry height="80" width="200" x="400" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="disc_fields" parent="disciplina" style="shape=partialRectangle;connectable=0;fill=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" value="PK: id_disciplina (int)&#xa;nome (varchar)&#xa;FK: id_curso (int)" vertex="1">
+          <mxGeometry height="50" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aluno_disc" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;" value="Aluno_Disciplina" vertex="1">
+          <mxGeometry height="80" width="200" x="400" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="ad_fields" parent="aluno_disc" style="shape=partialRectangle;connectable=0;fill=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" value="FK: matricula (int)&#xa;FK: id_disciplina (int)" vertex="1">
+          <mxGeometry height="50" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_curso_aluno" edge="1" parent="1" source="curso" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;" target="aluno" value="1 : N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_curso_disc" edge="1" parent="1" source="curso" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;" target="disciplina" value="1 : N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_aluno_nm" edge="1" parent="1" source="aluno" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;" target="aluno_disc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_disc_nm" edge="1" parent="1" source="disciplina" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;" target="aluno_disc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UHRccWXqlSo6K0YzhYeg-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Aluno_Curso&lt;/b&gt;" vertex="1">
+          <mxGeometry height="78" width="186" x="-120" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="UHRccWXqlSo6K0YzhYeg-2" parent="UHRccWXqlSo6K0YzhYeg-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="FK: matricula (int)" vertex="1">
+          <mxGeometry height="26" width="186" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="UHRccWXqlSo6K0YzhYeg-3" parent="UHRccWXqlSo6K0YzhYeg-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="FK: id_disciplina (int)" vertex="1">
+          <mxGeometry height="26" width="186" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="UHRccWXqlSo6K0YzhYeg-7" edge="1" parent="1" source="curso" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERmany;endFill=0;entryX=0.46;entryY=-0.03;entryDx=0;entryDy=0;entryPerimeter=0;" target="UHRccWXqlSo6K0YzhYeg-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-70" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UHRccWXqlSo6K0YzhYeg-8" edge="1" parent="1" source="aluno" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.452;entryY=0.966;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=ERmany;endFill=0;" target="UHRccWXqlSo6K0YzhYeg-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
