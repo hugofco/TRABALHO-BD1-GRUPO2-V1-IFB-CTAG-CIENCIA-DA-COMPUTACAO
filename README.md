@@ -1,8 +1,7 @@
 # TRABALHO-BD1-GRUPO2-V1-IFB-CTAG-CIENCIA-DA-COMPUTACAO
 Versão 1 de um trabalho prático em grupo de modelagem e implementação de um banco de dados teórico em SQL para a disciplina de banco de dados 1, ministrada pelo Dr. Fabiano Cavalcanti Fernandes. SEMESTRE(2026/1)
 
-Um agradecimento e os devidos créditos a todos os membros do grupo 2 que colaboraram com este trabalho:
-Maria Eduarda, Graziella, Pedro César, Pablo, João Alexandre, Hugo, Julia, Marcos, Marconny, João Pedro, Railan, Rafael, Guilherme e Wallyson.
+Um agradecimento e os devidos crétidos à todos os alunos que colaboraram com este trabalho: Maria Eduarda, Graziella, Pedro César, Pablo, João Alexandre, Hugo, Julia, Marcos, Marconi, João Pedro, Railan, Rafael, Guilherme, Wallyson.
 
 ## Contexto:
 Imagine que você tenha que modelar um sistema de administração de uma Universidade. Com as entidades Aluno, Curso e Disciplina. Um aluno pode se matricular em várias disciplinas e em apenas um curso, um curso possui N disciplinas e N alunos, uma disciplina possui N alunos.
